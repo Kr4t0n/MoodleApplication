@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:andriod="http://schemas.android.com/apk/res/android"
+    andriod:layout_width="fill_parent"
+    andriod:layout_height="fill_parent"
+    andriod:fillViewport="true">
+    <RelativeLayout
+        andriod:layout_width="fill_parent"
+        andriod:layout_height="wrap_content"
+        andriod:background="#ffffff">
+
+        <!--Header Starts-->
+        <LinearLayout
+            andriod:id="@+id/header"
+            andriod:layout_width="fill_parent"
+            andriod:layout_height="wrap_content"
+            andriod:background="@layout/header_gradient"
+            andriod:paddingTop="5dip"
+            andriod:paddingBottom="5dip">
+            <!--Logo Starts-->
+            <ImageView
+                andriod:src="@drawable/moodle"
+                andriod:layout_width="wrap_content"
+                andriod:layout_height="wrap_content"
+                andriod:layout_marginLeft="10dip"/>
+            <!--Logo Ends-->
+        </LinearLayout>
+        <!--Header Ends-->
+
+        <!--Login Form-->
+        <LinearLayout
+            andriod:orientation="vertical"
+            andriod:layout_width="match_parent"
+            andriod:layout_height="wrap_content"
+            andriod:padding="10dip"
+            andriod:layout_below="@id/header">
+
+            <!--PortalID Label-->
+            <TextView
+                andriod:layout_width="fill_parent"
+                andriod:layout_height="wrap_content"
+                andriod:textColor="#372c24"
+                andriod:text="PortalID"/>
+            <EditText
+                andriod:id="@+id/txt_UserName"
+                andriod:layout_width="fill_parent"
+                andriod:layout_height="wrap_content"
+                andriod:layout_marginTop="5dip"
+                andriod:layout_marginBottom="20dip"
+                andriod:singleLine="true"/>
+
+            <!--Password Label-->
+            <TextView
+                andriod:layout_width="fill_parent"
+                andriod:layout_height="wrap_content"
+                andriod:textColor="#372c24"
+                andriod:text="Password"/>
+            <EditText
+                andriod:id="@+id/txt_UserPW"
+                andriod:layout_width="fill_parent"
+                andriod:layout_height="wrap_content"
+                andriod:layout_marginTop="5dip"
+                andriod:singleLine="true"
+                andriod:inputType="textPassword"/>
+
+            <!--Login Button-->
+            <Button
+                andriod:id="@+id/btn_Login"
+                andriod:layout_width="fill_parent"
+                andriod:layout_height="wrap_content"
+                andriod:layout_marginTop="10dip"
+                andriod:text="Login"/>
+
+            <!--Link to Registration Screen-->
+            <TextView
+                andriod:id="@+id/link_to_register"
+                andriod:layout_width="fill_parent"
+                andriod:layout_height="wrap_content"
+                andriod:layout_marginTop="40dip"
+                andriod:layout_marginBottom="40dip"
+                andriod:text="New to Moodle? Register here"
+                andriod:gravity="center"
+                andriod:textSize="20dip"
+                andriod:textColor="#0b84aa"/>
+        </LinearLayout>
+        <!--Login Form Ends-->
+
+        <!--Footer Starts-->
+        <LinearLayout
+            andriod:id="@+id/footer"
+            andriod:layout_width="fill_parent"
+            andriod:layout_height="90dip"
+            andriod:layout_alignParentBottom="true"
+            andriod:background="@drawable/repeat_bg"
+            andriod:orientation="vertical">
+        </LinearLayout>
+        <!--Footer Ends-->
+    </RelativeLayout>
+</ScrollView>
